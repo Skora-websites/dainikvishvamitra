@@ -1,0 +1,209 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: newsmode
+      - generic [ref=e6]:
+        - generic [ref=e7]: दैनिक विश्वामित्र
+        - generic [ref=e8]: Admin Panel
+    - navigation [ref=e9]:
+      - generic [ref=e10]: Content
+      - link "dashboard Dashboard" [ref=e11] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin
+        - generic [ref=e12]: dashboard
+        - generic [ref=e13]: Dashboard
+      - link "article Articles" [ref=e14] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/articles
+        - generic [ref=e15]: article
+        - generic [ref=e16]: Articles
+      - link "category Categories" [ref=e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/categories
+        - generic [ref=e18]: category
+        - generic [ref=e19]: Categories
+      - link "description Pages" [ref=e20] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/pages
+        - generic [ref=e21]: description
+        - generic [ref=e22]: Pages
+      - generic [ref=e23]: Modules
+      - link "campaign Ticker" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/ticker
+        - generic [ref=e25]: campaign
+        - generic [ref=e26]: Ticker
+      - link "bolt Bulletins" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/bulletins
+        - generic [ref=e28]: bolt
+        - generic [ref=e29]: Bulletins
+      - link "trending_up Market" [ref=e30] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/market
+        - generic [ref=e31]: trending_up
+        - generic [ref=e32]: Market
+      - link "videocam Videos" [ref=e33] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/videos
+        - generic [ref=e34]: videocam
+        - generic [ref=e35]: Videos
+      - link "stars Horoscope" [ref=e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/horoscope
+        - generic [ref=e37]: stars
+        - generic [ref=e38]: Horoscope
+      - link "ballot Polls" [ref=e39] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/polls
+        - generic [ref=e40]: ballot
+        - generic [ref=e41]: Polls
+      - link "event Elections" [ref=e42] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/elections
+        - generic [ref=e43]: event
+        - generic [ref=e44]: Elections
+      - generic [ref=e45]: Publishing
+      - link "menu_book Epaper" [ref=e46] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/epapers
+        - generic [ref=e47]: menu_book
+        - generic [ref=e48]: Epaper
+      - link "inbox Messages" [ref=e49] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/messages
+        - generic [ref=e50]: inbox
+        - generic [ref=e51]: Messages
+      - link "mail Subscribers" [ref=e52] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/subscribers
+        - generic [ref=e53]: mail
+        - generic [ref=e54]: Subscribers
+      - generic [ref=e55]: Administration
+      - link "group Users" [ref=e56] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/users
+        - generic [ref=e57]: group
+        - generic [ref=e58]: Users
+      - link "settings Settings" [ref=e59] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/settings
+        - generic [ref=e60]: settings
+        - generic [ref=e61]: Settings
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]: A
+        - generic [ref=e65]:
+          - generic [ref=e66]: Admin
+          - generic [ref=e67]: admin
+      - generic [ref=e68]:
+        - link "View site" [ref=e69] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199
+        - link "Log out" [ref=e70] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e71]:
+    - main [ref=e72]:
+      - heading "डैशबोर्ड · Dashboard" [level=1] [ref=e74]
+      - generic [ref=e75]:
+        - link "article Published articles 8" [ref=e76] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/articles
+          - generic [ref=e77]:
+            - generic [ref=e78]: article
+            - text: Published articles
+          - generic [ref=e79]: "8"
+        - link "edit_note Drafts 0" [ref=e80] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/articles?status=draft
+          - generic [ref=e81]:
+            - generic [ref=e82]: edit_note
+            - text: Drafts
+          - generic [ref=e83]: "0"
+        - link "category Categories 6" [ref=e84] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/categories
+          - generic [ref=e85]:
+            - generic [ref=e86]: category
+            - text: Categories
+          - generic [ref=e87]: "6"
+        - link "mail Subscribers 0" [ref=e88] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/subscribers
+          - generic [ref=e89]:
+            - generic [ref=e90]: mail
+            - text: Subscribers
+          - generic [ref=e91]: "0"
+        - link "visibility Total views 0" [ref=e92] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/articles
+          - generic [ref=e93]:
+            - generic [ref=e94]: visibility
+            - text: Total views
+          - generic [ref=e95]: "0"
+        - link "inbox Unread messages 0" [ref=e96] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/admin/messages
+          - generic [ref=e97]:
+            - generic [ref=e98]: inbox
+            - text: Unread messages
+          - generic [ref=e99]: "0"
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - heading "article Latest articles" [level=2] [ref=e103]:
+              - generic [ref=e104]: article
+              - text: Latest articles
+            - link "+ New" [ref=e105] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/admin/articles/create
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - generic [ref=e108]:
+                - text: राजनीति · 27 Oct 2026 09:09
+                - generic [ref=e109]: विपक्ष की बैठक, साझा रणनीति पर होगी चर्च
+              - generic [ref=e110]:
+                - generic [ref=e111]: Published
+                - link "Edit" [ref=e112] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/8/edit
+            - generic [ref=e113]:
+              - generic [ref=e114]:
+                - text: ताज़ा खबरें · 27 Oct 2026 07:44
+                - generic [ref=e115]: मानसून की गतिविधियों में उछाल, कई जिलों में येलो अलर्ट
+              - generic [ref=e116]:
+                - generic [ref=e117]: Published
+                - link "Edit" [ref=e118] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/7/edit
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - text: ताज़ा खबरें · 27 Oct 2026 12:31
+                - generic [ref=e121]: शहर में नई बस सेवाएं, यात्रियों को मिलेगी राहत
+              - generic [ref=e122]:
+                - generic [ref=e123]: Published
+                - link "Edit" [ref=e124] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/6/edit
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - text: मनोरंजन · 27 Oct 2026 12:35
+                - generic [ref=e127]: नई फिल्म ने जमाया पहला दिन, बॉक्स ऑफिस पर बनी कमाई
+              - generic [ref=e128]:
+                - generic [ref=e129]: Published
+                - link "Edit" [ref=e130] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/5/edit
+            - generic [ref=e131]:
+              - generic [ref=e132]:
+                - text: खेल · 27 Oct 2026 10:28
+                - generic [ref=e133]: भारत ने जीता टेस्ट सीरीज़, अंतिम दिन में 6 विकेट
+              - generic [ref=e134]:
+                - generic [ref=e135]: Published
+                - link "Edit" [ref=e136] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/4/edit
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - text: व्यापार एवं बाज़ार · 27 Oct 2026 05:06
+                - generic [ref=e139]: Sensex में उछाल, निवेशकों के जेब में आया बड़ा फायदा
+              - generic [ref=e140]:
+                - generic [ref=e141]: Published
+                - link "Edit" [ref=e142] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/3/edit
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - text: राजनीति · 27 Oct 2026 12:17
+                - generic [ref=e145]: मानसून सत्र की शुरुआत, विपक्ष ने उठाए मुद्दे
+              - generic [ref=e146]:
+                - generic [ref=e147]: Published
+                - link "Edit" [ref=e148] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/2/edit
+            - generic [ref=e149]:
+              - generic [ref=e150]:
+                - text: ताज़ा खबरें · 27 Oct 2026 04:48
+                - generic [ref=e151]: गंगा सफाई अभियान में रिकॉर्ड स्तर पर कुदरत उपाय
+              - generic [ref=e152]:
+                - generic [ref=e153]: Published
+                - link "Edit" [ref=e154] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8199/admin/articles/1/edit
+        - generic [ref=e155]:
+          - generic [ref=e156]:
+            - heading "inbox Recent messages" [level=2] [ref=e157]:
+              - generic [ref=e158]: inbox
+              - text: Recent messages
+            - link "View all →" [ref=e159] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/admin/messages
+          - generic [ref=e160]: No messages.
+    - contentinfo [ref=e162]: दैनिक विश्वामित्र · Admin Panel v1.0.0

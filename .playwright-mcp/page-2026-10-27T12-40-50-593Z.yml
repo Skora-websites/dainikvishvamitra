@@ -1,0 +1,210 @@
+- generic [active] [ref=f6e1]:
+  - banner [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - generic [ref=f6e5]:
+        - generic [ref=f6e6]:
+          - generic [ref=f6e7]:
+            - generic [ref=f6e8]: calendar_today
+            - generic [ref=f6e9]: २७ अक्टूबर २०२६ | कोलकाता संस्करण
+          - generic [ref=f6e10]:
+            - generic [ref=f6e11]:
+              - generic [ref=f6e12]: thermostat
+              - text: कोलकाता ३१°C साफ़
+            - generic [ref=f6e13]:
+              - generic [ref=f6e14]: trending_up
+              - text: सेंसेक्स ८१,४६२ (+२४५)
+            - generic [ref=f6e15]:
+              - generic [ref=f6e16]: trending_down
+              - text: निफ्टी २४,९७१ (-३४)
+        - generic [ref=f6e17]:
+          - generic [ref=f6e18]:
+            - button "share" [ref=f6e19] [cursor=pointer]
+            - link "videocam" [ref=f6e21] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/video
+            - link "podcasts" [ref=f6e23] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199
+          - generic [ref=f6e26]:
+            - link "account_circle लॉग इन / साइन अप" [ref=f6e27] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/admin/login
+              - generic [ref=f6e28]: account_circle
+              - text: लॉग इन / साइन अप
+            - link "सदस्यता लें" [ref=f6e29] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/subscribe
+      - generic [ref=f6e31]:
+        - link [ref=f6e33] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199
+          - img "Dainik Vishwamitra Logo" [ref=f6e34]
+          - generic [ref=f6e35]:
+            - heading "दैनिक विश्वामित्र" [level=1] [ref=f6e36]
+            - paragraph [ref=f6e37]: भारत का प्रमुख एवं विश्वसनीय हिंदी दैनिक | स्थापना १९१६
+        - link "menu_book ई-पेपर (E-Paper PDF)" [ref=f6e39] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/epaper
+          - generic [ref=f6e40]: menu_book
+          - generic [ref=f6e41]: ई-पेपर (E-Paper PDF)
+      - navigation [ref=f6e42]:
+        - generic [ref=f6e44]:
+          - link "होम" [ref=f6e45] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199
+          - link "ताज़ा खबरें" [ref=f6e46] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/latest-news
+          - link "राजनीति" [ref=f6e47] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/politics
+          - link "व्यापार एवं बाज़ार" [ref=f6e48] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/business-and-markets
+          - link "खेल" [ref=f6e49] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/sports
+          - link "मनोरंजन" [ref=f6e50] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/entertainment
+          - link "राशिफल" [ref=f6e51] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/horoscope
+          - link "वीडियो" [ref=f6e52] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/video
+          - link "ब्रेकिंग" [ref=f6e53] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/breaking
+          - link "विचार" [ref=f6e54] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/opinion
+      - generic [ref=f6e56]:
+        - generic [ref=f6e57]: ताज़ा खबर / Breaking
+        - generic [ref=f6e59]: "[विशेष बुलेटिन]"
+        - generic [ref=f6e62]:
+          - link "chevron_left" [ref=f6e63] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/latest-news
+          - link "chevron_right" [ref=f6e65] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/category/latest-news
+  - main [ref=f6e67]:
+    - generic [ref=f6e68]:
+      - generic [ref=f6e70]:
+        - generic [ref=f6e71]:
+          - navigation [ref=f6e72]:
+            - link "होम" [ref=f6e73] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199
+            - generic [ref=f6e74]: /
+            - link "ई-पेपर आर्काइव" [ref=f6e75] [cursor=pointer]:
+              - /url: http://127.0.0.1:8199/epaper
+            - generic [ref=f6e76]: /
+            - generic [ref=f6e77]: Uploaded Edition 2
+          - generic [ref=f6e78]:
+            - generic [ref=f6e79]: menu_book
+            - generic [ref=f6e80]:
+              - heading "Uploaded Edition 2" [level=1] [ref=f6e81]
+              - paragraph [ref=f6e82]:
+                - text: "संस्करण तिथि:"
+                - strong [ref=f6e83]: मंगलवार, २७ अक्टूबर
+        - generic [ref=f6e84]:
+          - link "arrow_back सभी अंक · Archive" [ref=f6e85] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/epaper
+            - generic [ref=f6e86]: arrow_back
+            - generic [ref=f6e87]: सभी अंक · Archive
+          - link "download PDF डाउनलोड · Download" [ref=f6e88] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/uploads/epaper/real-test.pdf
+            - generic [ref=f6e89]: download
+            - generic [ref=f6e90]: PDF डाउनलोड · Download
+      - generic [ref=f6e91]:
+        - generic [ref=f6e92]:
+          - generic [ref=f6e93]:
+            - button "chevron_left पिछला" [ref=f6e94] [cursor=pointer]:
+              - generic [ref=f6e95]: chevron_left
+              - generic [ref=f6e96]: पिछला
+            - generic [ref=f6e97]:
+              - generic [ref=f6e98]: पृष्ठ
+              - spinbutton [ref=f6e99]: "1"
+              - generic [ref=f6e100]: /
+              - generic [ref=f6e101]: "--"
+            - button "अगला chevron_right" [ref=f6e102] [cursor=pointer]:
+              - generic [ref=f6e103]: अगला
+              - generic [ref=f6e104]: chevron_right
+          - generic [ref=f6e105]:
+            - button "zoom_out" [ref=f6e106] [cursor=pointer]
+            - button "100%" [ref=f6e108] [cursor=pointer]
+            - button "zoom_in" [ref=f6e109] [cursor=pointer]
+            - button "fit_screen फिट चौड़ाई" [ref=f6e111] [cursor=pointer]:
+              - generic [ref=f6e112]: fit_screen
+              - generic [ref=f6e113]: फिट चौड़ाई
+          - generic [ref=f6e114]:
+            - button "view_sidebar" [ref=f6e115] [cursor=pointer]
+            - button "fullscreen" [ref=f6e117] [cursor=pointer]
+        - generic [ref=f6e122]:
+          - paragraph [ref=f6e124]: ई-पेपर लोड हो रहा है…
+          - paragraph [ref=f6e125]: Dainik Vishwamitra E-Paper Reader
+      - generic [ref=f6e127]:
+        - generic [ref=f6e128]:
+          - heading "history हाल के अन्य अंक · Recent Editions" [level=2] [ref=f6e129]:
+            - generic [ref=f6e130]: history
+            - generic [ref=f6e131]: हाल के अन्य अंक · Recent Editions
+          - link "सभी देखें →" [ref=f6e132] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/epaper
+        - link "picture_as_pdf Test Edition मंगलवार, २७ अक्टूबर" [ref=f6e134] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199/epaper/1
+          - generic [ref=f6e135]: picture_as_pdf
+          - heading "Test Edition" [level=3] [ref=f6e137]
+          - paragraph [ref=f6e138]: मंगलवार, २७ अक्टूबर
+  - contentinfo [ref=f6e139]:
+    - generic [ref=f6e140]:
+      - generic [ref=f6e141]:
+        - generic [ref=f6e142]:
+          - generic [ref=f6e143]:
+            - img "Dainik Vishwamitra" [ref=f6e144]
+            - generic [ref=f6e145]: दैनिक विश्वामित्र
+          - paragraph [ref=f6e146]: दैनिक विश्वामित्र भारत का एक ऐतिहासिक व प्रतिष्ठित हिंदी दैनिक समाचार पत्र है, जो निष्पक्ष, सटीक और जनसरोकार से जुड़ी पत्रकारिता के प्रति एक सदी से भी अधिक समय से समर्पित है।
+          - generic [ref=f6e147]:
+            - generic [ref=f6e148]: "संस्करण नगर:"
+            - generic [ref=f6e149]: कोलकाता
+            - generic [ref=f6e150]: दिल्ली
+            - generic [ref=f6e151]: मुंबई
+            - generic [ref=f6e152]: पटना
+        - generic [ref=f6e153]:
+          - heading "प्रमुख अनुभाग" [level=3] [ref=f6e154]
+          - list [ref=f6e155]:
+            - listitem [ref=f6e156]:
+              - link "ताज़ा खबरें" [ref=f6e157] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/latest-news
+            - listitem [ref=f6e158]:
+              - link "राजनीति" [ref=f6e159] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/politics
+            - listitem [ref=f6e160]:
+              - link "व्यापार एवं बाज़ार" [ref=f6e161] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/business-and-markets
+            - listitem [ref=f6e162]:
+              - link "खेल" [ref=f6e163] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/sports
+            - listitem [ref=f6e164]:
+              - link "मनोरंजन" [ref=f6e165] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/entertainment
+            - listitem [ref=f6e166]:
+              - link "राशिफल" [ref=f6e167] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/category/horoscope
+        - generic [ref=f6e168]:
+          - heading "पाठक सेवा व उपक्रम" [level=3] [ref=f6e169]
+          - list [ref=f6e170]:
+            - listitem [ref=f6e171]:
+              - link "ई-पेपर आर्काइव" [ref=f6e172] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/epaper
+            - listitem [ref=f6e173]:
+              - link "संपादकीय मंडल" [ref=f6e174] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/page/editorial-board
+            - listitem [ref=f6e175]:
+              - link "गोपनीयता नीति (Privacy)" [ref=f6e176] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/page/privacy-policy
+            - listitem [ref=f6e177]:
+              - link "नियम एवं शर्तें" [ref=f6e178] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/page/terms
+            - listitem [ref=f6e179]:
+              - link "विज्ञापन दरें व संपर्क" [ref=f6e180] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/page/advertisement
+        - generic [ref=f6e181]:
+          - heading "दैनिक समाचार बुलेटिन" [level=3] [ref=f6e182]
+          - paragraph [ref=f6e183]: दिन की शीर्ष खबरें सीधे अपने इनबॉक्स में निःशुल्क प्राप्त करें।
+          - generic [ref=f6e184]:
+            - textbox "आपका ईमेल पता" [ref=f6e185]
+            - button "सदस्यता प्रारंभ करें" [ref=f6e186] [cursor=pointer]
+      - generic [ref=f6e187]:
+        - paragraph [ref=f6e188]: "© २०२६ दैनिक विश्वामित्र (Dainik Vishwamitra). सर्वाधिकार सुरक्षित। पंजीयन संख्या: WB/HIN/0018-PR."
+        - generic [ref=f6e189]:
+          - link "गोपनीयता नीति" [ref=f6e190] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/page/privacy-policy
+          - link "संपर्क" [ref=f6e191] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/page/contact
+          - link "शिकायत निवारण" [ref=f6e192] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/page/terms
+          - link "प्रेस विज्ञप्ति" [ref=f6e193] [cursor=pointer]:
+            - /url: http://127.0.0.1:8199/epaper

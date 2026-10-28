@@ -1,0 +1,7 @@
+# Laravel serves files directly; this directory holds user-uploaded media only.
+# Block script execution so a malicious upload can never run.
+<FilesMatch "\.(php[0-9]?|phtml|phar|cgi|pl|py|asp|aspx|jsp|sh|shtml)$">
+    Require all denied
+</FilesMatch>
+php_flag engine off
+AddType text/plain .php .phtml .phar .cgi .pl .py .asp .aspx .jsp

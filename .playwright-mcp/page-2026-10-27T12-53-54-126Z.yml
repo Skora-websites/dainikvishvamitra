@@ -1,0 +1,315 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: newsmode
+      - generic [ref=e6]:
+        - generic [ref=e7]: दैनिक विश्वामित्र
+        - generic [ref=e8]: Admin Panel
+    - navigation [ref=e9]:
+      - generic [ref=e10]: Content
+      - link "dashboard Dashboard" [ref=e11] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin
+        - generic [ref=e12]: dashboard
+        - generic [ref=e13]: Dashboard
+      - link "article Articles" [ref=e14] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/articles
+        - generic [ref=e15]: article
+        - generic [ref=e16]: Articles
+      - link "category Categories" [ref=e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/categories
+        - generic [ref=e18]: category
+        - generic [ref=e19]: Categories
+      - link "description Pages" [ref=e20] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/pages
+        - generic [ref=e21]: description
+        - generic [ref=e22]: Pages
+      - generic [ref=e23]: Modules
+      - link "campaign Ticker" [ref=e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/ticker
+        - generic [ref=e25]: campaign
+        - generic [ref=e26]: Ticker
+      - link "bolt Bulletins" [ref=e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/bulletins
+        - generic [ref=e28]: bolt
+        - generic [ref=e29]: Bulletins
+      - link "trending_up Market" [ref=e30] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/market
+        - generic [ref=e31]: trending_up
+        - generic [ref=e32]: Market
+      - link "videocam Videos" [ref=e33] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/videos
+        - generic [ref=e34]: videocam
+        - generic [ref=e35]: Videos
+      - link "stars Horoscope" [ref=e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/horoscope
+        - generic [ref=e37]: stars
+        - generic [ref=e38]: Horoscope
+      - link "ballot Polls" [ref=e39] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/polls
+        - generic [ref=e40]: ballot
+        - generic [ref=e41]: Polls
+      - link "event Elections" [ref=e42] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/elections
+        - generic [ref=e43]: event
+        - generic [ref=e44]: Elections
+      - generic [ref=e45]: Publishing
+      - link "menu_book Epaper" [ref=e46] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/epapers
+        - generic [ref=e47]: menu_book
+        - generic [ref=e48]: Epaper
+      - link "inbox Messages" [ref=e49] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/messages
+        - generic [ref=e50]: inbox
+        - generic [ref=e51]: Messages
+      - link "mail Subscribers" [ref=e52] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/subscribers
+        - generic [ref=e53]: mail
+        - generic [ref=e54]: Subscribers
+      - generic [ref=e55]: Administration
+      - link "group Users" [ref=e56] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/users
+        - generic [ref=e57]: group
+        - generic [ref=e58]: Users
+      - link "settings Settings" [ref=e59] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/settings
+        - generic [ref=e60]: settings
+        - generic [ref=e61]: Settings
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]: A
+        - generic [ref=e65]:
+          - generic [ref=e66]: Admin
+          - generic [ref=e67]: admin
+      - generic [ref=e68]:
+        - link "View site" [ref=e69] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199
+        - link "Log out" [ref=e70] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e71]:
+    - main [ref=e72]:
+      - generic [ref=e73]:
+        - generic [ref=e74]:
+          - generic [ref=e75]:
+            - generic [ref=e76]:
+              - generic [ref=e77]: Title *
+              - textbox [ref=e78]
+            - generic [ref=e79]:
+              - generic [ref=e80]: Slug (leave blank to generate from title)
+              - textbox [ref=e81]
+            - generic [ref=e82]:
+              - generic [ref=e83]: Language
+              - combobox [ref=e84]:
+                - option "Hindi" [selected]
+                - option "English"
+            - generic [ref=e85]:
+              - generic [ref=e86]: Excerpt
+              - textbox [ref=e87]
+            - generic [ref=e88]:
+              - generic [ref=e89]: Body
+              - generic [ref=e90]:
+                - toolbar "Formatting toolbar" [ref=e91]:
+                  - button "पूर्ववत करें · Undo (Ctrl+Z)" [ref=e92] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e93]: undo
+                  - button "फिर से करें · Redo (Ctrl+Y)" [ref=e94] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e95]: redo
+                  - button "अनुच्छेद · Paragraph" [ref=e97] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e98]: format_paragraph
+                  - button "मुख्य शीर्षक · Heading 2" [ref=e99] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e100]: title
+                  - button "उप-शीर्षक · Heading 3" [ref=e101] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e102]: format_size
+                  - button "उद्धरण · Blockquote" [ref=e103] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e104]: format_quote
+                  - button "गाढ़ा · Bold (Ctrl+B)" [ref=e106] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e107]: format_bold
+                  - button "तिरछा · Italic (Ctrl+I)" [ref=e108] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e109]: format_italic
+                  - button "रेखांकित · Underline (Ctrl+U)" [ref=e110] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e111]: format_underlined
+                  - button "मध्यरेखा · Strikethrough" [ref=e112] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e113]: format_strikethrough
+                  - button "हाइलाइट · Highlight" [ref=e114] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e115]: format_ink_highlighter
+                  - button "ऊपर अंक · Superscript" [ref=e116] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e117]: superscript
+                  - button "नीचे अंक · Subscript" [ref=e118] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e119]: subscript
+                  - button "कोड ब्लॉक · Code Block" [ref=e120] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e121]: code
+                  - button "प्रारूपण हटाएं · Clear Formatting" [ref=e122] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e123]: format_clear
+                  - button "बिंदु सूची · Bullet List" [ref=e125] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e126]: format_list_bulleted
+                  - button "क्रमांकित सूची · Numbered List" [ref=e127] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e128]: format_list_numbered
+                  - button "विभाजक रेखा · Divider" [ref=e129] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e130]: horizontal_rule
+                  - button "चित्र अपलोड · Upload Image" [ref=e132] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e133]: add_photo_alternate
+                  - button "URL से चित्र · Image from URL" [ref=e134] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e135]: image
+                  - button "लिंक · Link (Ctrl+K)" [ref=e136] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e137]: link
+                  - button "लिंक हटाएं · Remove Link" [ref=e138] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e139]: link_off
+                  - button "सारणी जोड़ें · Insert Table" [ref=e140] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e141]: table_chart
+                  - button "बायाँ संरेखण · Align Left" [ref=e143] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e144]: format_align_left
+                  - button "केंद्र संरेखण · Center" [ref=e145] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e146]: format_align_center
+                  - button "दायाँ संरेखण · Align Right" [ref=e147] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e148]: format_align_right
+                  - button "समान संरेखण · Justify" [ref=e149] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e150]: format_align_justify
+                  - button "HTML स्रोत · View HTML Source" [ref=e152] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e153]: code_blocks
+                  - button "पूर्ण स्क्रीन · Fullscreen (Esc)" [ref=e154] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e155]: fullscreen
+                  - generic [ref=e156]:
+                    - generic [ref=e157]: 0 शब्द · 0 अक्षर
+                    - generic [ref=e158]: ~1 मिनट पढ़ने का समय
+                - textbox [ref=e159]: लेख का मुख्य भाग यहाँ लिखें…
+            - generic [ref=e160]:
+              - generic [ref=e161]: Key points (one per line — <strong> allowed)
+              - generic [ref=e162]:
+                - toolbar "Formatting toolbar" [ref=e163]:
+                  - button "Undo (Ctrl+Z)" [ref=e164] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e165]: undo
+                  - button "Redo (Ctrl+Y)" [ref=e166] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e167]: redo
+                  - button "Bold (Ctrl+B)" [ref=e169] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e170]: format_bold
+                  - button "Italic (Ctrl+I)" [ref=e171] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e172]: format_italic
+                  - button "Underline (Ctrl+U)" [ref=e173] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e174]: format_underlined
+                  - button "Strikethrough" [ref=e175] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e176]: format_strikethrough
+                  - button "Clear formatting" [ref=e177] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e178]: format_clear
+                  - button "Link (Ctrl+K)" [ref=e180] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e181]: link
+                  - button "Remove link" [ref=e182] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e183]: link_off
+                  - button "Bullet List" [ref=e185] [cursor=pointer]:
+                    - generic [aria-hidden] [ref=e186]: format_list_bulleted
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: 0 शब्द · 0 अक्षर
+                    - generic [ref=e189]: ~1 मिनट पढ़ने का समय
+                - textbox [ref=e190]: मुख्य बिंदु यहाँ लिखें…
+          - generic [ref=e191]:
+            - heading "Image" [level=3] [ref=e192]
+            - button "Choose File" [ref=e193]
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - generic [ref=e196]: Alt text
+                - textbox [ref=e197]
+              - generic [ref=e198]:
+                - generic [ref=e199]: Caption
+                - textbox [ref=e200]
+          - generic [ref=e201]:
+            - heading "SEO (optional)" [level=3] [ref=e202]
+            - textbox "Meta title" [ref=e203]
+            - textbox "Meta description" [ref=e204]
+        - generic [ref=e205]:
+          - generic [ref=e206]:
+            - heading "Publish" [level=3] [ref=e207]
+            - generic [ref=e208]:
+              - generic [ref=e209]: Category *
+              - combobox [ref=e210]:
+                - option "ताज़ा खबरें" [selected]
+                - option "राजनीति"
+                - option "व्यापार एवं बाज़ार"
+                - option "खेल"
+                - option "मनोरंजन"
+                - option "राशिफल"
+            - generic [ref=e211]:
+              - generic [ref=e212]: Status
+              - combobox [ref=e213]:
+                - option "Draft" [selected]
+                - option "Published"
+            - generic [ref=e214]:
+              - generic [ref=e215]: Published at
+              - textbox [ref=e216]: 2026-10-27T18:23
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - checkbox "Breaking" [ref=e219]
+                - text: Breaking
+              - generic [ref=e220]:
+                - checkbox "Featured" [ref=e221]
+                - text: Featured
+              - generic [ref=e222]:
+                - checkbox "Opinion" [ref=e223]
+                - text: Opinion
+              - generic [ref=e224]:
+                - checkbox "Visual" [ref=e225]
+                - text: Visual
+            - generic [ref=e226]:
+              - generic [ref=e227]:
+                - generic [ref=e228]: Reading (min)
+                - spinbutton [ref=e229]: "4"
+              - generic [ref=e230]:
+                - generic [ref=e231]: Comment count
+                - spinbutton [ref=e232]: "0"
+          - generic [ref=e233]:
+            - heading "Details" [level=3] [ref=e234]
+            - generic [ref=e235]:
+              - generic [ref=e236]: Badge label
+              - textbox "e.g. Special coverage" [ref=e237]
+            - generic [ref=e238]:
+              - generic [ref=e239]: Badge color
+              - combobox [ref=e240]:
+                - option "Red" [selected]
+                - option "Blue"
+                - option "Slate"
+                - option "Breaking red"
+                - option "Maroon"
+            - generic [ref=e241]:
+              - generic [ref=e242]: Stat (for market cards)
+              - textbox "e.g. BDL +4.8%" [ref=e243]
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - generic [ref=e246]: Home slot
+                - combobox [ref=e247]:
+                  - option "None" [selected]
+                  - option "Hero"
+                  - option "Spotlight"
+                  - option "Market card"
+                  - option "Politics lead"
+                  - option "Politics list"
+                  - option "Sports lead"
+                  - option "Sports list"
+                  - option "Entertainment"
+                  - option "Real estate"
+              - generic [ref=e248]:
+                - generic [ref=e249]: Home order
+                - spinbutton [ref=e250]: "0"
+            - generic [ref=e251]:
+              - generic [ref=e252]:
+                - generic [ref=e253]: Category slot
+                - combobox [ref=e254]:
+                  - option "None" [selected]
+                  - option "Lead package"
+                  - option "Grid card"
+                  - option "Dossier list"
+              - generic [ref=e255]:
+                - generic [ref=e256]: Category order
+                - spinbutton [ref=e257]: "0"
+            - generic [ref=e258]:
+              - generic [ref=e259]: Time label (e.g. 40 min ago — blank = automatic)
+              - textbox "40 min ago" [ref=e260]
+            - generic [ref=e261]:
+              - generic [ref=e262]: Location
+              - textbox "e.g. Kolkata" [ref=e263]
+            - generic [ref=e264]:
+              - generic [ref=e265]: Author
+              - textbox [ref=e266]: Special correspondent bureau
+            - generic [ref=e267]:
+              - generic [ref=e268]: Author role
+              - textbox [ref=e269]
+            - generic [ref=e270]:
+              - generic [ref=e271]: Author photo
+              - button "Choose File" [ref=e272]
+          - button "Save" [ref=e273] [cursor=pointer]
+    - contentinfo [ref=e274]: दैनिक विश्वामित्र · Admin Panel v1.0.0

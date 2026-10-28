@@ -1,0 +1,155 @@
+- generic [ref=f5e2]:
+  - complementary [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]: newsmode
+      - generic [ref=f5e6]:
+        - generic [ref=f5e7]: दैनिक विश्वामित्र
+        - generic [ref=f5e8]: Admin Panel
+    - navigation [ref=f5e9]:
+      - generic [ref=f5e10]: Content
+      - link "dashboard Dashboard" [ref=f5e11] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin
+        - generic [ref=f5e12]: dashboard
+        - generic [ref=f5e13]: Dashboard
+      - link "article Articles" [ref=f5e14] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/articles
+        - generic [ref=f5e15]: article
+        - generic [ref=f5e16]: Articles
+      - link "category Categories" [ref=f5e17] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/categories
+        - generic [ref=f5e18]: category
+        - generic [ref=f5e19]: Categories
+      - link "description Pages" [ref=f5e20] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/pages
+        - generic [ref=f5e21]: description
+        - generic [ref=f5e22]: Pages
+      - generic [ref=f5e23]: Modules
+      - link "campaign Ticker" [ref=f5e24] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/ticker
+        - generic [ref=f5e25]: campaign
+        - generic [ref=f5e26]: Ticker
+      - link "bolt Bulletins" [ref=f5e27] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/bulletins
+        - generic [ref=f5e28]: bolt
+        - generic [ref=f5e29]: Bulletins
+      - link "trending_up Market" [ref=f5e30] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/market
+        - generic [ref=f5e31]: trending_up
+        - generic [ref=f5e32]: Market
+      - link "videocam Videos" [ref=f5e33] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/videos
+        - generic [ref=f5e34]: videocam
+        - generic [ref=f5e35]: Videos
+      - link "stars Horoscope" [ref=f5e36] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/horoscope
+        - generic [ref=f5e37]: stars
+        - generic [ref=f5e38]: Horoscope
+      - link "ballot Polls" [ref=f5e39] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/polls
+        - generic [ref=f5e40]: ballot
+        - generic [ref=f5e41]: Polls
+      - link "event Elections" [ref=f5e42] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/elections
+        - generic [ref=f5e43]: event
+        - generic [ref=f5e44]: Elections
+      - generic [ref=f5e45]: Publishing
+      - link "menu_book Epaper" [ref=f5e46] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/epapers
+        - generic [ref=f5e47]: menu_book
+        - generic [ref=f5e48]: Epaper
+      - link "inbox Messages" [ref=f5e49] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/messages
+        - generic [ref=f5e50]: inbox
+        - generic [ref=f5e51]: Messages
+      - link "mail Subscribers" [ref=f5e52] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/subscribers
+        - generic [ref=f5e53]: mail
+        - generic [ref=f5e54]: Subscribers
+      - generic [ref=f5e55]: Administration
+      - link "group Users" [ref=f5e56] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/users
+        - generic [ref=f5e57]: group
+        - generic [ref=f5e58]: Users
+      - link "settings Settings" [ref=f5e59] [cursor=pointer]:
+        - /url: http://127.0.0.1:8199/admin/settings
+        - generic [ref=f5e60]: settings
+        - generic [ref=f5e61]: Settings
+    - generic [ref=f5e62]:
+      - generic [ref=f5e63]:
+        - generic [ref=f5e64]: A
+        - generic [ref=f5e65]:
+          - generic [ref=f5e66]: Admin
+          - generic [ref=f5e67]: admin
+      - generic [ref=f5e68]:
+        - link "View site" [ref=f5e69] [cursor=pointer]:
+          - /url: http://127.0.0.1:8199
+        - link "Log out" [ref=f5e70] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=f5e71]:
+    - main [ref=f5e72]:
+      - generic [ref=f5e73]:
+        - generic [ref=f5e74]:
+          - generic [ref=f5e75]:
+            - generic [ref=f5e76]:
+              - generic [ref=f5e77]: Uploaded Edition 2
+              - generic [ref=f5e78]: 2026-10-27 · सक्रिय · Active
+            - generic [ref=f5e79]:
+              - link "menu_book पढ़ें · Read" [ref=f5e80] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/epaper/2
+                - generic [ref=f5e81]: menu_book
+                - generic [ref=f5e82]: पढ़ें · Read
+              - link "PDF" [ref=f5e83] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/uploads/epaper/real-test.pdf
+              - generic [ref=f5e84]: "|"
+              - link "संपादित करें · Edit" [ref=f5e85] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/admin/epapers?edit=2
+              - button "हटाएं · Delete" [ref=f5e87] [cursor=pointer]
+          - generic [ref=f5e88]:
+            - generic [ref=f5e89]:
+              - generic [ref=f5e90]: Test Edition
+              - generic [ref=f5e91]: 2026-10-27 · सक्रिय · Active
+            - generic [ref=f5e92]:
+              - link "menu_book पढ़ें · Read" [ref=f5e93] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/epaper/1
+                - generic [ref=f5e94]: menu_book
+                - generic [ref=f5e95]: पढ़ें · Read
+              - link "PDF" [ref=f5e96] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/uploads/epaper/test.pdf
+              - generic [ref=f5e97]: "|"
+              - link "संपादित करें · Edit" [ref=f5e98] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/admin/epapers?edit=1
+              - button "हटाएं · Delete" [ref=f5e100] [cursor=pointer]
+        - generic [ref=f5e101]:
+          - heading "संपादित करें · Edit" [level=2] [ref=f5e102]
+          - generic [ref=f5e103]:
+            - generic [ref=f5e104]:
+              - generic [ref=f5e105]: शीर्षक · Title *
+              - 'textbox "जैसे: ९ अक्टूबर २०२५ — कोलकाता संस्करण · e.g. 9 Oct 2025 — Kolkata edition" [ref=f5e106]': Uploaded Edition 2
+            - generic [ref=f5e107]:
+              - generic [ref=f5e108]: तिथि · Date *
+              - textbox [ref=f5e109]: 2026-10-27
+            - generic [ref=f5e110]:
+              - generic [ref=f5e111]: PDF फ़ाइल · PDF file (बदलने हेतु नई चुनें · choose new to replace)
+              - generic [ref=f5e112]:
+                - generic [ref=f5e113]:
+                  - generic [ref=f5e114]: picture_as_pdf
+                  - generic [ref=f5e115]: real-test.pdf
+                - generic [ref=f5e116]:
+                  - link "visibility देखें" [ref=f5e117] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8199/epaper/2
+                    - generic [ref=f5e118]: visibility
+                    - generic [ref=f5e119]: देखें
+                  - link "डाउनलोड" [ref=f5e120] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8199/uploads/epaper/real-test.pdf
+              - button "Choose File" [ref=f5e121]
+            - generic [ref=f5e122]:
+              - generic [ref=f5e123]: मुखपृष्ठ चित्र (वैकल्पिक) · Cover image (optional)
+              - button "Choose File" [ref=f5e124]
+            - generic [ref=f5e125]:
+              - checkbox "सक्रिय · Active" [checked] [ref=f5e126]
+              - text: सक्रिय · Active
+            - generic [ref=f5e127]:
+              - button "सहेजें · Save" [ref=f5e128] [cursor=pointer]
+              - link "रद्द करें · Cancel" [ref=f5e129] [cursor=pointer]:
+                - /url: http://127.0.0.1:8199/admin/epapers
+    - contentinfo [ref=f5e130]: दैनिक विश्वामित्र · Admin Panel v1.0.0
