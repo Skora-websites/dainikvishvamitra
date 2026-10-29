@@ -91,12 +91,15 @@ class ArticleController extends AdminController
     private function persist(Request $request, Article $art, bool $isNew): RedirectResponse
     {
         $validated = $request->validate([
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['required_if:language,hi', 'nullable', 'string', 'max:255'],
+            'title_en' => ['required_if:language,en', 'nullable', 'string', 'max:255'],
             'language' => ['required', 'string', 'in:hi,en'],
             'slug' => ['nullable', 'string', 'max:220'],
             'category_id' => ['required', 'integer', 'exists:categories,id'],
             'excerpt' => ['nullable', 'string', 'max:2000'],
+            'excerpt_en' => ['nullable', 'string', 'max:2000'],
             'body' => ['nullable', 'string'],
+            'body_en' => ['nullable', 'string'],
             'image' => ['nullable', 'image', 'mimes:jpg,jpeg,png,gif,webp', 'max:10240'],
             'image_alt' => ['nullable', 'string', 'max:255'],
             'image_caption' => ['nullable', 'string', 'max:255'],
@@ -120,7 +123,8 @@ class ArticleController extends AdminController
             'image.max' => 'चित्र 10MB से बड़ी नहीं होनी चाही। · Image must not exceed 10MB.',
             'author_image.max' => 'लेखक चित्र 10MB से बड़ी नहीं होनी चाही। · Author photo must not exceed 10MB.',
         ], [
-            'title' => 'शीर्षक · Title',
+            'title' => 'शीर्षक · Title (Hindi)',
+            'title_en' => 'शीर्षक · Title (English)',
             'language' => 'भाषा · Language',
             'category_id' => 'श्रेणी · Category',
             'body' => 'मुख्य सामग्री · Body',
@@ -152,19 +156,24 @@ class ArticleController extends AdminController
             }
 
             $slug = Site::slugify(
-                trim((string) ($validated['slug'] ?? '')) !== '' ? $validated['slug'] : $validated['title']
+                trim((string) ($validated['slug'] ?? '')) !== ''
+                    ? $validated['slug']
+                    : (trim((string) ($validated['title'] ?? '')) !== '' ? $validated['title'] : $validated['title_en'])
             );
             $slug = $this->uniqueSlug($slug, $art->id);
 
             $bool = fn (string $k): int => $request->boolean($k) ? 1 : 0;
 
             $art->fill([
-                'title' => $validated['title'],
+                'title' => $validated['title'] ?? '',
+                'title_en' => $validated['title_en'] ?? null,
                 'language' => $validated['language'],
                 'slug' => $slug,
                 'category_id' => (int) $validated['category_id'],
                 'excerpt' => $validated['excerpt'] ?? null,
+                'excerpt_en' => $validated['excerpt_en'] ?? null,
                 'body' => $this->cleanBody($validated['body'] ?? ''),
+                'body_en' => $this->cleanBody($validated['body_en'] ?? ''),
                 'image' => $imgPath,
                 'image_alt' => $validated['image_alt'] ?? null,
                 'image_caption' => $validated['image_caption'] ?? null,

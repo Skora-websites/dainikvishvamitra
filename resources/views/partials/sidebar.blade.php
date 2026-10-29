@@ -165,7 +165,7 @@
 @if($archive)
 <div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm cursor-pointer" onclick="location.href='{{ $archive->url }}'">
 <div class="relative aspect-video">
-<img class="w-full h-full object-cover" alt="{{ $archive->image_alt ?: $archive->title }}" src="{{ asset($archive->image) }}"/>
+<img class="w-full h-full object-cover" alt="{{ $archive->image_alt ?: $archive->title }}" src="{{ $archive->image_url }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-ink-primary via-ink-primary/30 to-transparent"></div>
 <div class="absolute bottom-3 left-3 right-3 text-on-tertiary">
 <span class="bg-primary px-2 py-0.5 rounded text-[10px] font-bold uppercase">विश्वामित्र पुरालेख</span>

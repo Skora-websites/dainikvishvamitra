@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Support\Locale;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +21,8 @@ class Article extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = [
-        'category_id', 'title', 'language', 'slug', 'excerpt', 'body', 'image', 'image_alt', 'image_caption',
+        'category_id', 'title', 'title_en', 'language', 'slug', 'excerpt', 'excerpt_en', 'body', 'body_en',
+        'image', 'image_alt', 'image_caption',
         'author_name', 'author_role', 'author_image', 'location', 'badge_label', 'badge_color', 'stat_text',
         'is_breaking', 'is_featured', 'is_opinion', 'is_visual', 'home_slot', 'home_order',
         'cat_slot', 'cat_order', 'time_label', 'read_minutes', 'views', 'comment_count',
@@ -46,6 +48,35 @@ class Article extends Model
         'status' => 'draft',
         'language' => 'hi',
     ];
+
+    // ---- Bilingual content accessors ----
+    /**
+     * Title in the visitor's display language, falling back to the other
+     * language when that translation is missing. Raw values via getRawOriginal().
+     */
+    public function getTitleAttribute(mixed $value): mixed
+    {
+        $hi = $value === null || $value === '' ? null : $value;
+        $en = $this->title_en === null || $this->title_en === '' ? null : $this->title_en;
+
+        return Locale::isEnglish() ? ($en ?? $hi) : ($hi ?? $en);
+    }
+
+    public function getExcerptAttribute(mixed $value): mixed
+    {
+        $hi = $value === null || $value === '' ? null : $value;
+        $en = $this->excerpt_en === null || $this->excerpt_en === '' ? null : $this->excerpt_en;
+
+        return Locale::isEnglish() ? ($en ?? $hi) : ($hi ?? $en);
+    }
+
+    public function getBodyAttribute(mixed $value): mixed
+    {
+        $hi = $value === null || $value === '' ? null : $value;
+        $en = $this->body_en === null || $this->body_en === '' ? null : $this->body_en;
+
+        return Locale::isEnglish() ? ($en ?? $hi) : ($hi ?? $en);
+    }
 
     // ---- Relationships ----
     public function category()

@@ -91,7 +91,9 @@ class E2ESeeder extends Seeder
                 'title' => 'गंगा सफाई अभियान में रिकॉर्ड स्तर पर कुदरत उपाय',
                 'excerpt' => 'राष्ट्रीय मिशन के तहत इस वर्ष सबसे बड़ी संख्या में नए उपाय शुरू किए गए हैं।',
                 'body' => '<p>गंगा सफाई अभियान के तहत इस वर्ष अब तक के सबसे बड़ी कुदरत उपाय कार्यक्रम शुरू किए गए हैं। विशेषज्ञों का कहना है कि यह दीर्घकालिक लक्ष्य की ओर महत्वपूर्ण कदम है।</p><p>पर्यावेक्षण बोर्ड ने साप्ताहिक समीक्षा की स्थिति जाँची और अगले चरण की योजना प्रस्तुत की।</p>',
-                'image' => null,
+                // The only fixture row that carries a real upload, so thumbnails
+                // are visible on every seeded screen (hero, article page, feed).
+                'image' => 'uploads/news/2026/10/28-34fed13e36ed.jpg',
                 'home_slot' => 'hero',
                 'home_order' => 1,
                 'cat_slot' => 'lead',
@@ -171,7 +173,7 @@ class E2ESeeder extends Seeder
                     'title' => $a['title'],
                     'excerpt' => $a['excerpt'],
                     'body' => $a['body'],
-                    'image' => null,
+                    'image' => $a['image'] ?? null,
                     'image_alt' => $a['title'],
                     'author_name' => 'विशेष संवाददाता',
                     'location' => 'नई दिल्ली',

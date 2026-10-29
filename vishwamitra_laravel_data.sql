@@ -269,4 +269,8 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
+-- Added 2026-10-28: mark the two bilingual article migrations as already run
+-- (import together with vishwamitra_laravel_schema.sql, which carries the ALTERs).
+INSERT INTO `migrations` VALUES (22,'2026_10_27_000001_add_language_to_articles_table',1),(23,'2026_10_28_135205_add_english_content_to_articles_table',1);
+
 -- Dump completed on 2026-10-24 18:53:58

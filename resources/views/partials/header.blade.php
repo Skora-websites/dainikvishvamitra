@@ -10,6 +10,12 @@
 <div class="flex items-center gap-space-lg">
 <div class="hidden sm:flex items-center gap-2"><button type="button" onclick="navigator.share ? navigator.share({title:document.title,url:location.href}) : navigator.clipboard.writeText(location.href)" class="w-6 h-6 rounded flex items-center justify-center text-ink-muted hover:text-primary hover:bg-surface-container transition-colors" title="शेयर करें"><span class="material-symbols-outlined text-[15px]">share</span></button><a class="w-6 h-6 rounded flex items-center justify-center text-ink-muted hover:text-primary hover:bg-surface-container transition-colors" href="{{ url('video') }}" title="वीडियो"><span class="material-symbols-outlined text-[15px]">videocam</span></a><a class="w-6 h-6 rounded flex items-center justify-center text-ink-muted hover:text-primary hover:bg-surface-container transition-colors" href="{{ url('/') }}" title="समाचार पॉडकास्ट"><span class="material-symbols-outlined text-[15px]">podcasts</span></a></div>
 <div class="h-3.5 w-px bg-border-hairline hidden sm:block"></div>
+<div class="flex items-center gap-1 text-xs font-semibold">
+<a href="{{ route('language.switch', 'hi') }}" class="{{ \App\Support\Locale::current() === 'hi' ? 'text-primary' : 'text-ink-muted' }} hover:text-primary transition-colors" title="हिंदी में पढ़ें">हिं</a>
+<span class="text-border-strong">/</span>
+<a href="{{ route('language.switch', 'en') }}" class="{{ \App\Support\Locale::current() === 'en' ? 'text-primary' : 'text-ink-muted' }} hover:text-primary transition-colors" title="Read in English">EN</a>
+</div>
+<div class="h-3.5 w-px bg-border-hairline hidden sm:block"></div>
 <div class="flex items-center gap-3 font-medium"><a class="hover:text-primary transition-colors hidden md:flex items-center gap-1" href="{{ url('admin/login') }}"><span class="material-symbols-outlined text-[15px]">account_circle</span>लॉग इन / साइन अप</a><a class="bg-primary text-on-primary px-2.5 py-0.5 rounded text-xs font-semibold hover:bg-masthead-crimson transition-colors" href="{{ url('subscribe') }}">सदस्यता लें</a></div>
 </div>
 </div></div>

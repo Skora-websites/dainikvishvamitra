@@ -62,7 +62,8 @@ class PublicLayoutComposer
             ->orderByDesc('views')
             ->limit(5)
             ->get([
-                'id', 'title', 'slug', 'image', 'image_alt', 'author_name',
+                'id', 'title', 'title_en', 'excerpt', 'excerpt_en', 'body', 'body_en',
+                'slug', 'image', 'image_alt', 'author_name',
                 'category_id', 'views', 'time_label', 'published_at',
             ])
             ->map(function ($a) {
@@ -88,13 +89,14 @@ class PublicLayoutComposer
         $archive = Article::published()
             ->when($categoryId, fn ($q) => $q->where('category_id', $categoryId))
             ->orderByDesc('id')
-            ->first(['id', 'title', 'slug', 'image', 'image_alt', 'author_name', 'time_label', 'published_at']);
+            ->first(['id', 'title', 'title_en', 'slug', 'image', 'image_alt', 'author_name', 'time_label', 'published_at']);
 
         if ($archive) {
             $archive = (object) [
                 'title' => $archive->title,
                 'url' => url('article/'.$archive->slug),
                 'image' => $archive->image,
+                'image_url' => $archive->image_url,
                 'image_alt' => $archive->image_alt,
                 'views' => $archive->views,
                 'time_display' => $archive->time_display,

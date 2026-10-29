@@ -38,6 +38,10 @@ class ArticleController extends Controller
             'nav_active' => optional($art->category)->slug,
             'page_title' => $art->meta_title_resolved.' | दैनिक विश्वामित्र',
             'page_desc' => $art->meta_desc_resolved,
+            // Social share thumbnail. Only the article's own image, never the
+            // shared placeholder (it depicts another story).
+            'page_image' => ! empty($art->image) ? $art->image_url : null,
+            'page_image_alt' => $art->image_alt ?: $art->meta_title_resolved,
             'art' => $art,
             'key_points' => $art->keyPoints,
             'related' => $related,

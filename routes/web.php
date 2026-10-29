@@ -29,6 +29,7 @@ use App\Http\Controllers\EpaperController as PublicEpaperController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\HoroscopePageController;
 use App\Http\Controllers\HubController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PageController as PublicPageController;
 use App\Http\Controllers\PollVoteController;
 use App\Http\Controllers\RssController;
@@ -46,6 +47,12 @@ use Illuminate\Support\Facades\Route;
 
 // ---- Public site ----
 Route::get('/', HomeController::class)->name('home');
+
+// Display-language switch (hi/en), persisted in session; query string on the
+// return URL is preserved by back().
+Route::get('/language/{locale}', [LanguageController::class, 'switch'])
+    ->whereIn('locale', ['hi', 'en'])
+    ->name('language.switch');
 
 Route::get('/category/{slug}', PublicCategoryController::class)->name('category');
 Route::get('/article/{slug}', PublicArticleController::class)->name('article');

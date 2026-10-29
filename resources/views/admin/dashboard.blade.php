@@ -23,7 +23,7 @@ $cards = [
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 <div class="lg:col-span-2 bg-white rounded-lg border">
 <div class="flex items-center justify-between mb-3 px-4 pt-4">
-<h2 class="font-bold flex items-center gap-2"><span class="material-symbols-outlined text-red-700">article</span>Latest articles</h2>
+<h2 class="font-bold flex items-center gap-2"><span class="material-symbols-outlined text-red-700" aria-hidden="true">article</span>Latest articles</h2>
 <a href="{{ route('admin.articles.create') }}" class="text-sm bg-red-800 hover:bg-red-900 text-white px-3 py-1.5 rounded font-semibold">+ New</a>
 </div>
 <div class="divide-y text-sm">
@@ -45,7 +45,7 @@ $cards = [
 
 <div class="bg-white rounded-lg border">
 <div class="flex items-center justify-between mb-3 px-4 pt-4">
-<h2 class="font-bold flex items-center gap-2"><span class="material-symbols-outlined text-amber-700">inbox</span>Recent messages</h2>
+<h2 class="font-bold flex items-center gap-2"><span class="material-symbols-outlined text-amber-700" aria-hidden="true">inbox</span>Recent messages</h2>
 <a href="{{ route('admin.messages') }}" class="text-xs text-stone-600 hover:underline">View all →</a>
 </div>
 <div class="divide-y text-sm">

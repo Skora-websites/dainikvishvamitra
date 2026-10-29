@@ -16,7 +16,9 @@ class SearchController extends Controller
             ->when($q !== '', function ($w) use ($q) {
                 $w->where(function ($sub) use ($q) {
                     $sub->where('title', 'like', "%{$q}%")
+                        ->orWhere('title_en', 'like', "%{$q}%")
                         ->orWhere('excerpt', 'like', "%{$q}%")
+                        ->orWhere('excerpt_en', 'like', "%{$q}%")
                         ->orWhere('author_name', 'like', "%{$q}%")
                         ->orWhere('slug', 'like', "%{$q}%");
                 });

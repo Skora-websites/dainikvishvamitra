@@ -11,9 +11,14 @@ $kpText = old('key_points', $kp_text ?? '');
 <div class="lg:col-span-2 space-y-4">
 <div class="bg-white rounded-lg border p-4 space-y-3">
 <div>
-<label class="block text-sm font-semibold mb-1">Title *</label>
-<input name="title" required value="{{ old('title', $art->title ?? '') }}" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800"/>
+<label class="block text-sm font-semibold mb-1">Title (Hindi) *</label>
+<input name="title" value="{{ old('title', !empty($art) ? (string) $art->getRawOriginal('title') : '') }}" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800"/>
 @error('title')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
+</div>
+<div>
+<label class="block text-sm font-semibold mb-1">Title (English)</label>
+<input name="title_en" value="{{ old('title_en', !empty($art) ? (string) $art->getRawOriginal('title_en') : '') }}" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800"/>
+@error('title_en')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
 </div>
 <div>
 <label class="block text-sm font-semibold mb-1">Slug <span class="font-normal text-stone-500">(leave blank to generate from title)</span></label>
@@ -21,7 +26,7 @@ $kpText = old('key_points', $kp_text ?? '');
 @error('slug')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
 </div>
 <div>
-<label class="block text-sm font-semibold mb-1">Language</label>
+<label class="block text-sm font-semibold mb-1">Language <span class="font-normal text-stone-500">(primary language — the other language's fields stay optional)</span></label>
 @php($lang = old('language', $art->language ?? 'hi'))
 <select name="language" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800">
 <option value="hi" {{ $lang === 'hi' ? 'selected' : '' }}>Hindi</option>
@@ -30,14 +35,24 @@ $kpText = old('key_points', $kp_text ?? '');
 @error('language')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
 </div>
 <div>
-<label class="block text-sm font-semibold mb-1">Excerpt</label>
-<textarea name="excerpt" rows="2" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800">{{ old('excerpt', $art->excerpt ?? '') }}</textarea>
+<label class="block text-sm font-semibold mb-1">Excerpt (Hindi)</label>
+<textarea name="excerpt" rows="2" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800">{{ old('excerpt', !empty($art) ? (string) $art->getRawOriginal('excerpt') : '') }}</textarea>
 @error('excerpt')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
 </div>
 <div>
-<label class="block text-sm font-semibold mb-1">Body</label>
-<textarea name="body" id="article-body" rows="12">{{ old('body', $art->body ?? '') }}</textarea>
+<label class="block text-sm font-semibold mb-1">Body (Hindi)</label>
+<textarea name="body" id="article-body" rows="12">{{ old('body', !empty($art) ? (string) $art->getRawOriginal('body') : '') }}</textarea>
 @error('body')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
+</div>
+<div>
+<label class="block text-sm font-semibold mb-1">Excerpt (English)</label>
+<textarea name="excerpt_en" rows="2" class="w-full px-3 py-2 border rounded focus:outline-none focus:border-red-800">{{ old('excerpt_en', !empty($art) ? (string) $art->getRawOriginal('excerpt_en') : '') }}</textarea>
+@error('excerpt_en')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
+</div>
+<div>
+<label class="block text-sm font-semibold mb-1">Body (English)</label>
+<textarea name="body_en" id="article-body-en" rows="12">{{ old('body_en', !empty($art) ? (string) $art->getRawOriginal('body_en') : '') }}</textarea>
+@error('body_en')<p class="text-xs text-red-600 mt-1">{{ $message }}</p>@enderror
 </div>
 <div>
 <label class="block text-sm font-semibold mb-1">Key points <span class="font-normal text-stone-500">(one per line — &lt;strong&gt; allowed)</span></label>
@@ -204,6 +219,16 @@ $kpText = old('key_points', $kp_text ?? '');
         csrfToken : '{{ csrf_token() }}',
         language  : '{{ old('language', $art->language ?? 'hi') }}',
         placeholder: 'लेख का मुख्य भाग यहाँ लिखें…',
+      });
+    }
+
+    var bodyEnEl = document.getElementById('article-body-en');
+    if (bodyEnEl && window.DvEditor) {
+      DvEditor.create(bodyEnEl, {
+        uploadUrl : '{{ route('admin.uploads.image') }}',
+        csrfToken : '{{ csrf_token() }}',
+        language  : 'en',
+        placeholder: 'Write the article body in English…',
       });
     }
 

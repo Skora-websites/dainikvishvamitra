@@ -28,13 +28,14 @@
 </form>
 </div>
 <div class="bg-white rounded-lg border overflow-x-auto">
-<table class="w-full text-sm min-w-[760px]">
+<table class="w-full text-sm min-w-[860px]">
 <thead><tr class="text-left text-xs text-stone-500 border-b">
-<th class="px-4 py-2">Title</th><th class="px-4 py-2">Category</th><th class="px-4 py-2">Language</th><th class="px-4 py-2">Status</th><th class="px-4 py-2">Views</th><th class="px-4 py-2">Updated</th><th class="px-4 py-2">Actions</th>
+<th class="px-4 py-2">Thumbnail</th><th class="px-4 py-2">Title</th><th class="px-4 py-2">Category</th><th class="px-4 py-2">Language</th><th class="px-4 py-2">Status</th><th class="px-4 py-2">Views</th><th class="px-4 py-2">Updated</th><th class="px-4 py-2">Actions</th>
 </tr></thead>
 <tbody class="divide-y">
 @foreach(($articles ?? []) as $r)
 <tr>
+<td class="px-4 py-2"><img src="{{ $r->image_url }}" alt="" class="w-14 h-10 object-cover rounded border bg-stone-100"/></td>
 <td class="px-4 py-2"><div class="font-medium">{{ $r->title }}</div><div class="text-xs text-stone-500">{{ $r->slug }}@if(!empty($r->home_slot) || !empty($r->cat_slot)) · <span class="text-red-700 font-semibold">[{{ trim(($r->home_slot ?? '') . ' ' . ($r->cat_slot ?? '')) }}]</span>@endif</div></td>
 <td class="px-4 py-2 text-xs">{{ $r->category->name_hi ?? '' }}</td>
 <td class="px-4 py-2 text-xs">{{ $r->language === 'en' ? 'English' : 'Hindi' }}</td>
@@ -48,7 +49,7 @@
 </td>
 </tr>
 @endforeach
-@if(($articles ?? collect())->isEmpty())<tr><td colspan="7" class="px-4 py-6 text-center text-stone-500">No articles found.</td></tr>@endif
+@if(($articles ?? collect())->isEmpty())<tr><td colspan="8" class="px-4 py-6 text-center text-stone-500">No articles found.</td></tr>@endif
 </tbody>
 </table>
 </div>

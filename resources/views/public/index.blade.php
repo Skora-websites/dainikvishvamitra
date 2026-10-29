@@ -35,7 +35,7 @@
 @if($hero)
 <article class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col group">
 <div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container-high">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="{{ $hero->image_alt ?: $hero->title }}" src="{{ asset($hero->image) }}"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="{{ $hero->image_alt ?: $hero->title }}" src="{{ $hero->image_url }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
 <div class="absolute top-4 left-4 flex items-center gap-2">
 <span class="bg-breaking-red text-on-primary font-label-badge text-label-badge uppercase tracking-wider px-2.5 py-1 rounded font-semibold shadow">
@@ -87,7 +87,7 @@
 @foreach($spots as $sp)
 <article class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex gap-4 hover:shadow-md transition-shadow group cursor-pointer" onclick="location.href='{{ $sp->url }}'">
 <div class="w-32 h-28 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $sp->image_alt ?: $sp->title }}" src="{{ asset($sp->image) }}"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $sp->image_alt ?: $sp->title }}" src="{{ $sp->image_url }}"/>
 </div>
 <div class="flex flex-col justify-between min-w-0">
 <div>
@@ -181,7 +181,7 @@
 </div>
 @if($pol_lead)
 <div class="relative rounded-lg overflow-hidden aspect-[16/10] bg-surface-container-high group cursor-pointer" onclick="location.href='{{ $pol_lead->url }}'">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $pol_lead->image_alt ?: $pol_lead->title }}" src="{{ asset($pol_lead->image) }}"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $pol_lead->image_alt ?: $pol_lead->title }}" src="{{ $pol_lead->image_url }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
 <div class="absolute bottom-3 left-3 right-3 text-on-primary">
 <span class="text-xs bg-primary px-2 py-0.5 rounded font-label-badge font-semibold">{{ $pol_lead->badge_label ?: 'विशेष कवरेज' }}</span>
@@ -213,7 +213,7 @@
 </div>
 @if($sport_lead)
 <div class="relative rounded-lg overflow-hidden aspect-[16/10] bg-surface-container-high group cursor-pointer" onclick="location.href='{{ $sport_lead->url }}'">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $sport_lead->image_alt ?: $sport_lead->title }}" src="{{ asset($sport_lead->image) }}"/>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" alt="{{ $sport_lead->image_alt ?: $sport_lead->title }}" src="{{ $sport_lead->image_url }}"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent"></div>
 <div class="absolute bottom-3 left-3 right-3 text-on-primary">
 <span class="text-xs bg-secondary px-2 py-0.5 rounded font-label-badge font-semibold">{{ $sport_lead->badge_label ?: 'खेल' }}</span>

@@ -740,4 +740,13 @@ commit;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*M!100616 SET NOTE_VERBOSITY=@OLD_NOTE_VERBOSITY */;
 
+-- Added 2026-10-28: bilingual article columns so a fresh import matches the
+-- current app schema (migrations 2026_10_27_000001 + 2026_10_28_135205).
+ALTER TABLE `articles` ADD COLUMN `language` enum('hi','en') NOT NULL DEFAULT 'hi' AFTER `title`;
+ALTER TABLE `articles` ADD INDEX `idx_articles_language` (`language`);
+ALTER TABLE `articles` ADD COLUMN `title_en` varchar(255) NULL AFTER `title`;
+ALTER TABLE `articles` ADD COLUMN `excerpt_en` text NULL AFTER `excerpt`;
+ALTER TABLE `articles` ADD COLUMN `body_en` text NULL AFTER `body`;
+INSERT INTO `migrations` VALUES (22,'2026_10_27_000001_add_language_to_articles_table',1),(23,'2026_10_28_135205_add_english_content_to_articles_table',1);
+
 -- Dump completed on 2026-10-24 18:53:58
